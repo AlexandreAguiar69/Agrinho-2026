@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terra Viva • Agricultura Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <!-- Logo -->
+                <div class="logo">
+                    <i class="fas fa-leaf"></i>
+                    <span>Terra Viva</span>
+                </div>
+
+                <!-- Desktop Menu -->
+                <ul class="nav-menu">
+                    <li><a href="#" class="active">Início</a></li>
+                    <li><a href="#">Notícias</a></li>
+                    <li><a href="#">Recuperação de Solos</a></li>
+                    <li><a href="#">Agricultura Regenerativa</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <div class="search-bar">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="search-input" placeholder="Buscar artigos...">
+                    </div>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="hamburger" id="hamburger" aria-label="Menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Recuperação de Solos</a></li>
+                <li><a href="#">Agricultura Regenerativa</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">Destaque</div>
+            <h1 class="hero-title">Recuperação de Áreas Degradadas: O Futuro da Produção Agrícola Sustentável</h1>
+            <p class="hero-excerpt">Técnicas inovadoras como adubação verde, plantio direto e rotação de culturas estão transformando solos improdutivos em áreas férteis novamente.</p>
+            <div class="hero-meta">
+                <span>Por Alexandre de Aguiar Filho</span>
+                <span>•</span>
+                <span>05 Jun 2026</span>
+            </div>
+            <a href="#" class="btn-primary">Ler artigo completo</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://picsum.photos/id/1015/1200/800" alt="Área degradada sendo recuperada">
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-container">
+        <!-- NEWS FEED -->
+        <section class="news-section">
+            <div class="section-header">
+                <h2>Últimas Notícias</h2>
+                <a href="#" class="view-all">Ver todas <i class="fas fa-arrow-right"></i></a>
+            </div>
+            
+            <div class="news-grid" id="news-grid">
+                <!-- Cards serão inseridos via JavaScript -->
+            </div>
+        </section>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <!-- Categorias -->
+            <div class="sidebar-card">
+                <h3>Categorias</h3>
+                <div class="categories">
+                    <span class="category-tag">Recuperação de Solo</span>
+                    <span class="category-tag">Adubação Verde</span>
+                    <span class="category-tag">Plantio Direto</span>
+                    <span class="category-tag">Reflorestamento</span>
+                    <span class="category-tag">Sustentabilidade</span>
+                    <span class="category-tag">Agricultura Familiar</span>
+                </div>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="sidebar-card newsletter">
+                <h3>Fique por dentro</h3>
+                <p>Receba as melhores práticas de agricultura regenerativa diretamente no seu e-mail.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Seu melhor e-mail">
+                    <button>Inscrever</button>
+                </div>
+            </div>
+
+            <!-- Popular -->
+            <div class="sidebar-card">
+                <h3>Mais Lidos</h3>
+                <ul class="popular-list" id="popular-list">
+                    <!-- Preenchido via JS -->
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <div class="logo">
+                    <i class="fas fa-leaf"></i>
+                    <span>Terra Viva</span>
+                </div>
+                <p>Plataforma dedicada à agricultura sustentável, recuperação de solos e inovação rural.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Explorar</h4>
+                <ul>
+                    <li><a href="#">Notícias Recentes</a></li>
+                    <li><a href="#">Casos de Sucesso</a></li>
+                    <li><a href="#">Técnicas</a></li>
+                    <li><a href="#">Pesquisas</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Recursos</h4>
+                <ul>
+                    <li><a href="#">Guia de Recuperação</a></li>
+                    <li><a href="#">Ferramentas</a></li>
+                    <li><a href="#">Comunidade</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <p>📍 Escola Benedicto João Cordeiro</p>
+                <p>🌱 Inspirado em práticas sustentáveis</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Terra Viva • Desenvolvido como demo com conteúdo do Caderno de Pesquisa</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
